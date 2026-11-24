@@ -176,9 +176,10 @@ ipconfig /all
 ```
 
 **Screenshot:** `05-corrected-ip-configuration.png`
+<img width="857" height="526" alt="image" src="https://github.com/user-attachments/assets/f1beba7c-ad16-46f6-b1da-885718905b6f" />
 
 **Why it matters:** Targeted remediation resolves the underlying issue while minimizing operational risk.
-<img width="857" height="526" alt="image" src="https://github.com/user-attachments/assets/f1beba7c-ad16-46f6-b1da-885718905b6f" />
+
 
 ### **Step 7 — Validate network functionality**
 
