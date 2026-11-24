@@ -55,6 +55,8 @@ ipconfig /all
 ```
 
 **Screenshot:** `01-initial-ip-configuration.png`
+<img width="848" height="593" alt="image" src="https://github.com/user-attachments/assets/3eb74dab-1594-43d9-98df-91a3a5b16e04" />
+
 
 **Why it matters:** Establishing a baseline before making changes preserves diagnostic evidence and prevents unnecessary configuration modifications.
 
@@ -79,6 +81,7 @@ ping 192.168.1.1
 | Default gateway | Test router accessibility            |
 
 **Screenshot:** `02-initial-connectivity-tests.png`
+<img width="738" height="808" alt="image" src="https://github.com/user-attachments/assets/ae68479b-2ed9-4596-9555-9cf16edba211" />
 
 **Why it matters:** Connectivity testing helps narrow the investigation and identify where communication is failing.
 
@@ -102,6 +105,7 @@ ipconfig /all
 Compare the IPv4 configuration of both devices, focusing on the IP address, subnet mask, default gateway, and DNS servers.
 
 **Screenshot:** `03-known-good-configuration.png`
+<img width="710" height="417" alt="image" src="https://github.com/user-attachments/assets/64fa0dde-ca5e-4880-8b37-6e84d88af430" />
 
 **Why it matters:** A working endpoint provides a reliable reference for identifying configuration discrepancies.
 
@@ -121,6 +125,8 @@ ping 192.168.1.1
 Compare the results with the initial tests performed on Home-Laptop.
 
 **Screenshot:** `04-network-fault-isolation.png`
+<img width="646" height="815" alt="image" src="https://github.com/user-attachments/assets/e541b59e-42e3-4c70-a662-ab879883acab" />
+
 
 **Why it matters:** Testing from a healthy workstation helps isolate the affected endpoint and avoid unnecessary infrastructure changes.
 
@@ -142,6 +148,8 @@ The configuration comparison revealed a typographical error in Home-Laptop's sta
 **Root cause confirmed:** Static IPv4 misconfiguration.
 
 The issue originated from the endpoint configuration, not a network-wide infrastructure failure.
+<img width="747" height="467" alt="image" src="https://github.com/user-attachments/assets/63cbe8cb-b351-482d-8153-5447b2cbbf62" />
+
 
 ## **5. Phase II — Remediation & Validation**
 
@@ -170,6 +178,7 @@ ipconfig /all
 **Screenshot:** `05-corrected-ip-configuration.png`
 
 **Why it matters:** Targeted remediation resolves the underlying issue while minimizing operational risk.
+<img width="857" height="526" alt="image" src="https://github.com/user-attachments/assets/f1beba7c-ad16-46f6-b1da-885718905b6f" />
 
 ### **Step 7 — Validate network functionality**
 
@@ -196,6 +205,7 @@ nslookup google.com
 Verify external website accessibility using a web browser.
 
 **Screenshot:** `06-post-remediation-validation.png`
+<img width="592" height="776" alt="image" src="https://github.com/user-attachments/assets/f8ddef55-f7cc-4093-bfae-2b0e0545f5fc" />
 
 **Why it matters:** Applying a fix does not complete the troubleshooting process. Successful verification provides evidence that the original problem has been resolved.
 
@@ -282,16 +292,4 @@ The solution required systematic investigation, logical reasoning, targeted reme
 
 > **The difference between fixing a problem and resolving an incident is the ability to identify the root cause, restore functionality, and prove that the solution works.**
 
-## **GitHub repository settings**
 
-**Repository name**
-
-`network-connectivity-restoration`
-
-**Repository description**
-
-Enterprise-style network troubleshooting project demonstrating TCP/IP diagnostics, endpoint fault isolation, static IPv4 remediation, root cause analysis, and connectivity validation in a Windows environment.
-
-**GitHub topics**
-
-`it-support` `help-desk` `networking` `tcp-ip` `windows-11` `network-troubleshooting` `root-cause-analysis` `incident-resolution` `network-administration` `technical-support` `it-portfolio`
